@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "codelldb",
+      "request": "launch",
+      "custom": true,
+      "name": "GDB Remote (LLDB)",
+      "targetCreateCommands": [
+        "platform select remote-gdb-server",
+        "target createate /home/goyox86/Code/rust/embedded/discovery/microbit/src/05-led-roulette/target/thumbv7em-none-eabihf/debug/led-roulette"
+      ],
+      "processCreateCommands": [
+        "platform connect connect://127.0.0.1:1337"
+      ]
+    }
+  ]
+}
